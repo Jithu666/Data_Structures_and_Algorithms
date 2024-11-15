@@ -1,0 +1,53 @@
+
+import statements are of two types
+
+-> implicit import statements ex: import java.util.*;
+-> Explicit import statements ex: import java.util.ArrayList;
+
+
+when we need to access any classes from the package, we use import statements to reduce fully qualified naming convention's.
+
+to improve the readability of the code, we must use explicit import statements.
+
+even if we are using 100 import statements we should go for explicit import statements.
+
+
+in any IDE, if we access any built-in package IDE will directly write the import statement on our behalf, IDE will always write Explicit import statement to improve the readability of the program, so that we can know from which package the class was imported.
+
+We need not import two packages in our program's because they are imported by default.
+
+1) java.lang
+2) default package
+
+1) java.lang : String class is present inside the java.lang package. we use the Strings class without importing the java.lang package
+    Thread class
+    StringBuffer class
+    Exception classes are also present inside java.lang package.
+
+    All classes and interfaces present inside java.lang package can be directly accessed without using any import statement
+
+2) default package : if we need to access any classes or packages within the same directory or within the same package, then we need not write      any import package for the classes and methods within the same package.
+
+    we need not write any import statements to access the classes and methods present in the same directory or same package.
+
+
+
+Pattern class is present inside the regex package of util package
+                                    regex package is present inside util package (regex package was introduces to java in version java 1.4)
+                                                                    util package is present inside java package
+
+When we import any package all the sub-classes and sub-packages will not be available in import java.*; statement
+
+we need to write the import statement upto the sub-package level.
+
+in this case we need to write the import statement up-to import java.util.regex.*;
+
+or import java.util.regex.Pattern;
+
+
+
+inside any java program or .java file "At-most" one package can be created,
+if we try to create more than package, compiler throws an error.
+
+
+if we are using any package in our java program, then the first line should be the package name, even before the import statements. or else compiler will throw a compile time error.

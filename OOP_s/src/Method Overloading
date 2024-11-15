@@ -1,0 +1,91 @@
+
+                    // Method Overloading
+
+
+            // In Overloading method resolution is always taken care by the compiler.
+
+
+    When Two or more methods have the same method name but differ in the type of argument, then such methods are called as overloaded methods.
+
+    Overloading does not depend on the Object created for the class but depends on the run-time reference / which class is calling the method, that is why we call Overloading as Compile time Polymorphism           ^                                                 ^
+                                          ^                                                 ^
+                                          |                                                 |
+    methodOverloading mo = new methodOverloading() |----------------------------------------|
+        |------------------------------------------|
+
+
+    Method Overloading is also called as Static polymorphism or early binding.
+
+
+    What is Automatic promotion in Overloading .
+
+    When we pass a argument to the overloaded function, and the java compiler checks for that value in the method table, if the argument type is not found in the method table, then the compiler automatically promotes the argument type into the next type. after converting the argument type into all the primitive data-types, even then if the compiler could not find the argument type provided in the calling function, only then compiler will throw Compile time error.
+
+
+    Automatic Promotion in Overloading
+
+
+    byte -> short |
+                  |-----> int ----> long ----> float -----> double
+                  |
+    char  --------|
+
+    Compiler will check in the method table for the provided method name and argument type in the method table, if the compiler finds the method name but not the argument type, then the compiler will promote the provided argument to all the levels as shown in the above diagram, if it does not find any of the methods with the argument type with greater priority than the data-type passed in the calling function, at this point compiler will throw a Compile time error.
+
+
+    // In Overloading, when there exist a situation where both parent and child can provide implementation for the method, then the compiler will let the child class invoke the method as the child class will have all the properties of the parent class.
+
+    In Overloading the argument type matched with the calling function will will get the higher priority.
+
+
+    If two methods can implement a calling function and are not inherited and they do share all the variables and methods to implement a function then compiler throws an error stating Ambiguity in the function call. as the compiler is not awarre which method should implement the function call.
+
+    if there is an "int... i" method which can take any number of arguments, then the compiler will check if there is any method with the         number of parameters mentioned in the function call, if there exists any function then that method will be invoked, if a method does          not exist which will take exact number of arguments, then the int... method will be invoked.
+
+    //  int... method has the lowest priority in the method table, when the compiler searches the method table.
+
+    //  for ex: if a function call is made with one argument and a method exists which takes one argument in the method table then that method           will get invoked.
+
+    //  Compiler gives priority to the methods in the order in which they have been declared.
+
+
+
+    // case 5
+
+    there is no precedence in resolving method arguments, like left to right, if two methods have same name and argument type.
+
+
+    // case 6
+
+    method implementation is always done on refernce type and not in object creation at run-time
+
+    ex: class A {
+
+    }
+
+    class B extends A{
+
+    }
+
+    public static void main {
+
+        mo.printClass("Jithu");
+
+        J j = new J();
+
+        j.printClass("Jithu");
+
+        methodOverloading m1 = new J();
+        m1.printClass("Jithu"); // here the compiler will invoke the function in methodOverloading class, because the compiler will not wait till run-time to decide which method should be invoked on the function call,
+    }
+
+
+
+
+
+
+
+
+
+
+

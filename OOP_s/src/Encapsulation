@@ -1,0 +1,22 @@
+
+
+                    // Encapsulation
+
+    The process of Grouping up of data members and member functions into a single unit is called as Encapsulation.
+
+    every java class is an example of Encapsulation.
+
+    Any Component which satisfies Data Hiding and Abstraction is also an Component of Encapsulation.
+
+
+    Advantages of Encapsulation.                                DisAdvantages
+
+    Security                                                    Reduces Performance
+    Code readability/Manageability/Modularity                   Increases Code size.
+
+
+            // Tightly Encapsulated Class
+
+    If all the variables present in the class are declared as private, then such a class is called as Tightly Encapsulated Class.
+
+

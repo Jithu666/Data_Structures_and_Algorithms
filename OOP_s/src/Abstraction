@@ -1,0 +1,21 @@
+
+                // Abstraction
+
+    hiding the implementation details and showing only the services and operations which can be performed to the end-user is called as abstraction.
+
+    this is done to keep our implementation details confidential from the end-users.
+
+
+    Hiding internal details, by highlighting the set of operations we are going to provide.
+
+    by using interfaces, we can implement Abstraction.
+
+
+    Advantages of Abstraction:
+
+    Security
+    Outsiders will not know the internal working details
+    Enhancement will become easy, without affecting the end-user.
+    maintainability of the Application will improved
+
+    by using interfaces Modularity of the code can be enhanced. which will lead to code readability.

@@ -1,0 +1,5 @@
+
+
+                // Member Modifiers
+
+    First we need to check the access modifiers of the class, because the class access modifiers have higher priority than the access modifiers of the methods, even if the Method's access modifiers are public, but the Access modifiers of the class are private, protected or default, then those methods might not be visible outside the class, sub-class and within other packages when inherited or other packages respectively.
