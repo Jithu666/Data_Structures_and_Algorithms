@@ -1,6 +1,6 @@
-public class insertionSort {
+public class InsertionSort {
     public static void main(String[] args) {
-        int arr[] = {2,3,4,5,6,7,9,8,11,10,1};
+        int[] arr = {2,3,4,5,6,7,9,8,11,10,1};
         System.out.print("Before Insertion Sort : ");
         printArray(arr);
         insertionSort(arr);
