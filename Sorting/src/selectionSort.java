@@ -1,5 +1,5 @@
 
-public class selectionSort {
+public class SelectionSort {
     public static void main(String[] args) {
         int arr[] = {1,2,7,8,9,0,3,4,5,6};
 
