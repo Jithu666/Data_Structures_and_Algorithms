@@ -9,10 +9,8 @@ public class printName {
 
     static void printName(int n, String name){
 
-
-
         if(n > 0) {
-            System.out.println("You are  " + name);
+            System.out.println("You are " + name);
             printName(n - 1, name);
         }
     }
