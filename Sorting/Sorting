@@ -1,0 +1,26 @@
+
+
+        // SORTING
+
+Sorting refers to arranging the elements in the data-structure in any of the two orders, either Ascending or Descending Order.
+
+sorting can be classified into 2 types stable sort and unstable sort
+
+stable sort is when the order of similar elements coming in does not change..
+
+unstable sort is when the order of similar elements coming in changes..
+
+
+internal and external sorting
+
+internal sorting : takes place inside the main memory of the computer
+
+external sorting : takes place in the hard disk of the computer
+
+
+In-place and not In-place sorting
+
+In-place sorting sorts the elements in the same array,
+
+while not In-place sorting sorts the elements by creating a auxiliary space array.
+
