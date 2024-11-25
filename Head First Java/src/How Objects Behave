@@ -1,0 +1,8 @@
+
+                // HOW OBJECTS BEHAVE
+
+a function call passes arguments to the calling fuction
+whereas the called function takes parameters to execute the function.
+
+we do not want other people to make changes to our class variables so we set the instance variables to "private" and we create getter and setter methods for each instance variable so if any user needs to access the instance variabl, then they can set the value according to their requirements which will only be affecting the variable of that particular class and not of the entire program.
+
