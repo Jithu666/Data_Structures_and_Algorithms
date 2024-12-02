@@ -1,0 +1,16 @@
+
+
+What is a LinkedList ?
+
+LinkedList is a linear data-structure,
+LinkedList is a dynamic data structure. which means the size of the LinkedList's size can be increased and decreased dynamically.
+
+LinkedList has two sections, data and node
+data contains the information
+node contains pointer to next node.
+
+LinkedList's can be classified into 3 types
+
+Singly LinkedList
+Doubly LinkedList
+Circular LinkedList
