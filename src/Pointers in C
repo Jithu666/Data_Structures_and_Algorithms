@@ -1,0 +1,19 @@
+Dangling Pointer
+
+when the temp value returns the value to a function call, the pointer is now pointing to some Arbitrary memory location. This is dangerous.
+
+Allocating on the heap
+We can allocate space on the heap using a library function in malloc from stdlib.h
+
+malloc(n) allocates 'n' bytes of memory on heap.
+
+to create a 10 size memory on heap we create it in the following way.
+
+ptr = (int *) malloc (10 * sizeof(int));
+now the ptr will be allocated a memory of 40 bytes on the heap and the pointer to the starting address on the heap will be returned as a integer as we have type casted the starting address to (int *).
+
+once we are done with our operations on the heap, it is advised to free memory on the heap.. it can be done with free(ptr).
+
+forgetting to free the pointer created using malloc can lead to memory leak from the system.
+this is because it makes way for Dangling pointer.
+
