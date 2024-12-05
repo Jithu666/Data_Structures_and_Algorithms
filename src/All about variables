@@ -1,0 +1,19 @@
+
+        // Variables in Java
+
+What happens if you declare a variable and do not initialize its value, will the compiler accept it. or will the compiler throw any error ?
+
+The compiler will not throw any error. Compiler will still execute the values by assigning the variables with default values.
+
+for Integer it is : 0
+for Double it is : 0.0
+for String it is : null
+for Boolean it is : false
+
+what is the difference between local variable and instance variable?
+
+Instance variables are declared inside the class but not inside the methods(functions), these variables are accessible from anywhere in the program depending on their access specifer.
+
+Local variable are declared within a function adn can be accessed only within that function and cannot be accessed outside the function.
+Local variables must be initialized before they are used within the program.
+
