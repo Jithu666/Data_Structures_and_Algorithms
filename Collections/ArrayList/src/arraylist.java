@@ -1,58 +1,30 @@
 import java.util.ArrayList;
-import java.util.List;
-
-public class arraylist {
+public class arrayList {
 
     public static void main(String[] args) {
-//        List<Integer> list = new ArrayList<>(4);
-//
-////        add operation
-//        for(int i = 10; i <= 100; i+=10){
-//            list.add(i);
-//        }
-//        System.out.println(list);
+        ArrayList al = new ArrayList();
 
-//      get item from the list
-//        System.out.println(list.get(5));
+        // add elements into the list
+        al.add(1);
+        al.add("J");
+        al.add('J');
+        al.add(0.3);
+        al.add(false);
+        al.add('\0');
+        System.out.println(al);
 
-//        modifying the element
-//        list.set(9,100);
-//        System.out.println(list.get(9));
-
-//      remove operation
-//        removes element from the specified index
-//        list.remove(9);
-//        System.out.println(list.get(8));
+        al.remove("J");
+        System.out.println(al);
 
 
-//        check the size of the arraylist
-//        System.out.println(list.size());
+        System.out.println(al.contains(true));
 
+        System.out.println(al.isEmpty());
 
-        List<String> list = new ArrayList<>();
-        list.add("Mango");
-        list.add("Apple");
-        list.add("Guava");
-        list.add("Pomegranate");
-        list.add("Pomegranate");
+        System.out.println(al.indexOf(0.3));
 
-//      view the contents of the arraylist, through for loop
-        for (String s : list) {
-//            System.out.println(s + " ");
-        }
+        System.out.println(al.size());
 
-//        remove the contents of the list through its index value
-//        list.remove(4);
-
-//        remove the contents of the list through its name
-            list.remove("Pomegranate");
-
-//        update the contents of the list
-//        list.set(4, "Blackberry");
-//        System.out.println(list.get(4));
-
-        for (String s : list) {
-            System.out.println(s + " ");
-        }
+        System.out.println(al.get(4));
     }
 }
