@@ -1,0 +1,21 @@
+
+    // FILE IO
+
+File IO in java is used to read from and write tot files.
+
+Java provides classes and methods within Java.io & java.nio packages for file operations, including reading, writing and manipulating file data.
+
+File IO is commonly used for tasks such as storing and retrieving data, reading configurations and logging.
+
+
+common methods
+
+createNewFile(): creates a new empty file.
+mkdir(): creates a new directory
+exists(): checks if the file/directory exists.
+delete(): Deletes the file or directory.
+
+
+FileReader & FileWriter
+
+FileReader reads from the file
