@@ -1,0 +1,43 @@
+
+        // Exception Handling
+
+Exception Handling in java is a mechanism that handles run-time errors, allowing the program to continue or gracefully stop when an error occurs.
+
+Basic Syntax for Exception Handling
+
+try {
+    // Code that may throw an exception
+} catch (ExceptionType e) {
+    // Code to handle the exception
+} finally {
+    // Optional code block for cleanup
+}
+
+
+the best practice in exception handling is to first catch known exception
+
+try {
+    // code that is expected to throw multiple exceptions
+} catch (IOException e){
+    // handles IO exception specifically
+} catch (Exception e) {
+    // catch all other unknown possible exceptions
+}
+
+
+Avoid Silent catch blocks
+
+if the catch block is empty it might suppress the warnings in the future and it might become difficult in debugging.
+
+
+    // In Java, Exceptions are propagated up the call stack. if a method does not catch an exception, it passses the exception to the method that called it, and so on, until it's caught or reaches the main method. this is known as exception propagation.
+
+
+public void methodA() throws IOException {
+    methodB();
+}
+
+public void methodB() throws IOException {
+    // Throws IOException that propagates back to methodA
+}
+
